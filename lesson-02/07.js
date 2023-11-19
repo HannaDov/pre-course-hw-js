@@ -8,7 +8,16 @@ let passportMarried = {
         city: "Bobryisk"
     }
 };
-let passportMarriedCopy = {...passportMarried,married:true};
+let passportMarriedCopy = {
+    name: "Petr",
+    surname: "Petrov",
+    married:true,
+    address: {
+        country: "USA",
+        city: "Bobryisk"
+    }
+};
+
 
 console.log(passportMarried)
 console.log(passportMarriedCopy)
