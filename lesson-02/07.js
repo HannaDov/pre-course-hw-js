@@ -9,12 +9,11 @@ let passportMarried = {
     }
 };
 let passportMarriedCopy = {
-    name: "Petr",
-    surname: "Petrov",
+    name: passportMarried.name,
+    surname: passportMarried.surname,
     married:true,
-    address: {
-        country: "USA",
-        city: "Bobryisk"
+    address: {...passportMarried.address
+
     }
 };
 
