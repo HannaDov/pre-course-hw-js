@@ -8,14 +8,8 @@ let passportMarried = {
         city: "Bobryisk"
     }
 };
-let passportMarried2 = {
-    name: passportMarried.name,
-    surname: passportMarried.surname,
-    married:true,
-    address: {...passportMarried.address
-
-    }
-};
+let passportMarried2 = Object.assign({}, passportMarried); // создание глубокой копии объекта
+passportMarried2.married = true;
 
 
 console.log(passportMarried)
